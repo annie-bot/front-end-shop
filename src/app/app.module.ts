@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './pages/register/register.component';
-import { LoginComponent } from './pages/login/login.component';
-import { ListUsersComponent } from './pages/list-users/list-users.component';
+import { ListEnterpriseComponent } from './pages/list-enterprise/list-enterprise.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 
@@ -13,8 +13,8 @@ import { ListUsersComponent } from './pages/list-users/list-users.component';
   declarations: [
     AppComponent,
     RegisterComponent,
-    LoginComponent,
-    ListUsersComponent,
+    ListEnterpriseComponent,
+    HomeComponent,
 
   ],
   imports: [
