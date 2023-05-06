@@ -1,0 +1,24 @@
+.my-container{
+  width: 100%;
+  height: 627px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.centralized-card{
+  position: relative;
+  right: 200%;
+  width: 100%;
+}
+.background {
+  background-image: linear-gradient(to right, #87CEFA, #C8A2C8); /* Degrade azul bebê para lilás */
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
+}
+.centralized-btn{
+  position: relative;
+  left: 31%;
+  width: 36%;
+}

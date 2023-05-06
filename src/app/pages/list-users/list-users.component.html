@@ -1,0 +1,22 @@
+<div class="container-fluid background">
+  <div class="my-container">
+    <table class="table table-success table-striped">
+      <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>CPF</th>
+        <th>CEP</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario in usuarios">
+          <td>{{usuario.nome}}</td>
+          <td>{{usuario.email}}</td>
+          <td>{{usuario.cpf}}</td>
+          <td>{{usuario.cep}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
