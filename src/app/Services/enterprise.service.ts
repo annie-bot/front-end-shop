@@ -6,28 +6,28 @@ import {HttpClient} from "@angular/common/http";
 })
 export class EnterpriseService {
 
-    private baseUrl = 'http://localhost:8080/';
+    private baseUrl = 'localhost:8080';
 
     constructor(private http: HttpClient) {
     }
 
   create(enterprise: any) {
-    return this.http.post(`${this.baseUrl}/learningpath/`, enterprise)
+    return this.http.post(`${this.baseUrl}/enterprises`, enterprise)
   }
 
   getAllEnterprises() {
-    return this.http.get(`${this.baseUrl}/enterprise/`);
+    return this.http.get(`${this.baseUrl}/enterprises`);
   }
 
-  getEnterpriseById(id) {
-    return this.http.get(`${this.baseUrl}/enterprise/${id}`);
+  getEnterpriseById(id: any) {
+    return this.http.get(`${this.baseUrl}/enterprises/${id}`);
   }
 
-  updateEnterprise(id: number, learningPath: any) {
-    return this.http.put(`${this.baseUrl}/enterprise/${id}`, learningPath);
+  updateEnterprise(id: any, learningPath: any) {
+    return this.http.put(`${this.baseUrl}/enterprises/${id}`, learningPath);
   }
 
-  deleteById(id){
-    return this.http.delete(`${this.baseUrl}/enterprise/${id}`)
+  deleteById(id: any){
+    return this.http.delete(`${this.baseUrl}/enterprises/${id}`)
   }
 }

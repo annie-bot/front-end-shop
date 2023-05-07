@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import {  OnInit } from '@angular/core';
+import {EnterpriseService} from "../../Services/enterprise.service";
+import { FormsModule } from '@angular/forms';
+import {flatMap} from "rxjs";
 
 @Component({
   selector: 'app-list-users',
@@ -8,17 +11,35 @@ import {  OnInit } from '@angular/core';
 })
 export class ListEnterpriseComponent implements OnInit {
 
-  usuarios: any[] = []
-  user: any = {nome: "nobrega", email: "dddhsjs@sksks", cpf: "8338339293", cep: "94833948"}
+  enterprises: any[] = [];
+  isAdd: boolean = false;
 
   constructor() {
-    for (let index = 0; index < 10; index++) {
-      this.usuarios.push(this.user)
-    }
+
   }
 
   ngOnInit(): void {
+  }
+
+  addEnterprise(name: any, cnpj: any, email: any, cep: any) {
+    let id = this.enterprises.length + 1;
+    let enterprise = {id: id, name: name, email: email, cep: cep}
+    this.enterprises.push(enterprise);
+    console.log(this.enterprises.values())
+    this.isAdd = false;
+  }
+
+  removeEnterprise() {
 
   }
+
+  editEnterprise() {
+
+  }
+
+  add() {
+    return this.isAdd = true;
+  }
+
 }
 

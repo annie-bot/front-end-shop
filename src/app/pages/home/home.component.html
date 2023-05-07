@@ -1,12 +1,26 @@
 <div class="container-fluid background">
-  <div class="my-container">
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img class="img-logo" src="https://png.pngtree.com/png-vector/20191030/ourlarge/pngtree-business-business-team-hierarchy-management-icon-for-web-png-image_1927637.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          Bootstrap
-        </a>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">OnClick</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a routerLink="/enterprises" class="nav-link active" aria-current="page" href="#">Empresa</a>
+          </li>
+          <li class="nav-item">
+            <a  routerLink="/supplier" class="nav-link" href="#">Fornecedor</a>
+          </li>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+  <div class="my-container">
   </div>
 </div>

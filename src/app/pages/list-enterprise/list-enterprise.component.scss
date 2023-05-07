@@ -7,5 +7,10 @@
 }
 
 .background {
-  background-image: linear-gradient(to right, #87CEFA, #C8A2C8); /* Degrade azul bebê para lilás */
+  background-image: linear-gradient(to right, #FFFAFA, #F0F8FF); /* Degrade azul bebê para lilás */
+}
+
+.align-col {
+  display: flex;
+  flex-direction: column;
 }
